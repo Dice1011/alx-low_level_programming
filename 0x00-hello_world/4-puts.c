@@ -1,6 +1,12 @@
 #include <stdio.h>
-/* Programming is like a multilingual puzzel */
-/*program returns 0*/
+
+/**
+ * main - Programming is like a multilingual puzzel
+ *
+ * Description: Program use puts function print standard output
+ *
+ * Returns: Always 0 (Success)
+ */
 
 int main(void)
 {
