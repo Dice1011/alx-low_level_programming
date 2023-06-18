@@ -1,5 +1,6 @@
 #include <stdlib.h>
 #include <time.h>
+#include <stdio>
 
 /**
  *  main - Script checks +ive vs -ive  number
