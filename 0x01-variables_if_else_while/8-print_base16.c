@@ -10,11 +10,11 @@ int main(void)
 	char ch;
 	int i;
 
-	for (i = 0; i <= 10; i++)
+	for (i = 0; i <= 9; i++)
 	{
 		putchar((i % 10) + '0');
 	}
-	for (ch = 'a'; ch <= 'z'; ch++)
+	for (ch = 'a'; ch <= 'f'; ch++)
 	{
 		putchar (ch);
 	}
