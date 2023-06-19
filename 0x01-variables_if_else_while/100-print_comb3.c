@@ -16,13 +16,10 @@ int main(void)
 			if (i == 9)
 				continue;
 		}
-		if (i != j)
-		{
-			putchar ((i % 10) + '0');
-			putchar ((j % 10) + '0');
-			putchar (',');
-			putchar (' ');
-		}
+		putchar ((i % 10) + '0');
+		putchar ((j % 10) + '0');
+		putchar (',');
+		putchar (' ');
 	}
 	putchar ('\n');
 	return (0);
