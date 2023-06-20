@@ -6,9 +6,9 @@
  */
 int main(void)
 {
-	char MyString[] = "_putchar";
+	int MyString[] = "_putchar";
 
-	putchar(MyString);
+	putchar('MyString');
 	putchar('\n');
 	return(0);
 }
