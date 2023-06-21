@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * print_alphabet - writes the character c to stdout
+ * print_alphabet - writes the character to stdout
  *
  * Description: print_alphabet prints char inlower case
  *
