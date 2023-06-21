@@ -2,15 +2,15 @@
 /**
  * main - Prints alpahabet in lower case
  *
- * Return: Always 0 (Success)
+ * Return: Void
  */
 void print_alphabet(void)
 {
-	char CH;
+	char ch;
 
-	for (CH = 'a'; CH <= 'z'; CH++)
+	for (ch = 'a'; ch <= 'z'; ch++)
 	{
-		_putchar('CH');
+		_putchar('ch');
 		_putchar('\n');
 	}
 }
