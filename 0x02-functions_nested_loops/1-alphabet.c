@@ -2,17 +2,19 @@
 /**
  * print_alphabet - writes the character c to stdout
  *
- * @ch: The character to print
+ * Description: print_alphabet prints char inlower case
+ *
+ * @A: The character to print
  *
  * Return: void
  */
 
 void print_alphabet(void)
 {
-	char ch;
+	char A;
 
-	for (ch = 'a'; ch <= 'z'; ch++)
-		_putchar(ch);
-	
+	for (A = 'a'; A <= 'z'; A++)
+		_putchar(A);
+
 	_putchar('\n');
 }
