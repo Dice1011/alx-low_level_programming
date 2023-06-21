@@ -1,13 +1,12 @@
-#include "main.h"
 #include <unistd.h>
 /**
- *main - writes the character A to std output
+ *main - writes the character c to std output
  *
  *Return: Always 1 (Success)
  */
 
-int _putchar(char A)
+int _putchar(char c)
 {
-	return(write(1, &A, 1));
+	return(write(1, &c, 1));
 }
 
