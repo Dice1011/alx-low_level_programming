@@ -1,11 +1,13 @@
 #include "main.h"
+
 /**
- * Jack_bauer - Print all min of the day of Jack Bauer
+ * jack_bauer - Prints all min of the day of Jack Bauer,start from 00:00-23:59
  *
- * Description: Print all min of the day of Jack Bauer,start from 00:00-23:59
+ * Description: jack_bauer funtion prints all minuites o the day.
  *
  * Return: Void
  */
+
 void jack_bauer(void)
 {
 	int w, x, y, z;
