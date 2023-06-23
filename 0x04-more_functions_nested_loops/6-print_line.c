@@ -3,7 +3,7 @@
  *print_line - unction prints a straight line
  *@n: parameter 1
  *
- * Return: Always 0;
+ * Return: integer;
  */
 void print_line(int n)
 {
@@ -15,7 +15,7 @@ void print_line(int n)
 	}
 	else
 	{
-		for (ln = 1; l <= n; ln++)
+		for (ln = 1; ln <= n; ln++)
 		{
 			_putchar('_');
 		}
