@@ -2,18 +2,19 @@
 
 /**
  *print_numbers - function prints numbers from 1 - 9
- *@i: number
+ *
  *Return: Always 0 (Success)
  */
 
 void print_numbers(void)
 {
-	int i;
+	int i = 0;
 
-	for (i = 0; i <= 9; i++)
-	{
-		_putchar(i);
+	do {
+		_putchar(i + 48);
+		i++;
 	}
+	while(i >= 0 && i <= 9);
 
 	_putchar('\n');
 }
