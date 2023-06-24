@@ -19,6 +19,7 @@ void print_diagonal(int n)
 			for (spc = 1; spc <= slash; spc++)
 				_putchar(' ');
 			_putchar(92);
+			_putchar(36);
 			_putchar('\n');
 		}
 	}
