@@ -14,9 +14,9 @@ void print_diagonal(int n)
 	}
 	else
 	{
-		for (slash = 1; slash < n; slash++)
+		for (slash = 0; slash < n; slash++)
 		{
-			for (spc = 1; spc < slash; spc++)
+			for (spc = 0; spc < slash; spc++)
 			{
 				_putchar(' ');
 			}
