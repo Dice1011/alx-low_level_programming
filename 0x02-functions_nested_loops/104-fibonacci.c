@@ -32,13 +32,13 @@ int main(void)
 			FibA += 1;
 			FibB %= 10000000000;
 		}
-		print("%lu%lu", FibA, FibB);
+		printf("%lu%lu", FibA, FibB);
 		if (i != 99)
 		{
 			printf(", ");
 			Fib1A = Fib2A;
 			Fib1B = Fib2B;
-			Fib2A = FibA
+			Fib2A = FibA;
 			Fib2B = FibB;
 		}
 	}
