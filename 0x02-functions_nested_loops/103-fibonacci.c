@@ -5,7 +5,7 @@
  */
 int main(void)
 {
-	float total;
+	int total;
 	unsigned long Fib1 = 0, Fib2 = 1, sum;
 
 	while (1)
@@ -23,7 +23,7 @@ int main(void)
 		Fib1 = Fib2;
 		Fib2 = sum;
 	}
-	printf("%f\n", total);
+	printf("%d\n", total);
 
 	return (0);
 }
