@@ -5,7 +5,6 @@
  */
 int main(void)
 {
-	int i;
 	float total;
 	unsigned long Fib1 = 0, Fib2 = 1, sum;
 
