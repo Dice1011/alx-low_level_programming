@@ -11,7 +11,7 @@ int _atoi(char *s)
 	int m = 1;
 	int F = 0;
 
-	while (s[i] == 45)
+	while (s[i])
 	{
 		if (s[i] == 45)
 		{
@@ -29,4 +29,6 @@ int _atoi(char *s)
 		}
 		i++;
 	}
+	j *= m;
+	return (j);
 }
