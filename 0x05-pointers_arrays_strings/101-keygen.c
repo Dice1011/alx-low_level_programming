@@ -7,42 +7,23 @@
  */
 int main(void)
 {
-	char PassWord[84];
-	int i = 0, sum = 0, Diff1, Diff2;
+	char PassWord[100];
+	int i, sum = 0, Diff1;
 
 	srand(time(0));
+	for (i = 0; i < 100; i++)
+	{
+		PassWord[i] = rand() % 78;
+		sum += (PassWord[i] + '0');
+		putchar(PassWord[i] + '0');
 
-	while (sum < 2772)
-	{
-		PassWord[i] = 33 + rand() % 94;
-		sum += PassWord[i++];
-	}
-	PassWord[i] = '\0';
-	if (sum != 2772)
-	{
-		Diff1 = (sum - 2772) / 2;
-		Diff2 = (sum - 2772) / 2;
-		if ((sum - 2772) % 2 != 0)
+		if ((2772 - sum) - '0' < 78)
 		{
-			Diff1++;
-		}
-		for (i = 0; PassWord[i]; i++)
-		{
-			if (PassWord[i] >= (33 + Diff1))
-			{
-				PassWord[i] -= Diff1;
-				break;
-			}
-			for (i = 0; PassWord[i]; i++)
-			{
-				if (PassWord[i] >= (33 + Diff2))
-				{
-					PassWord[i] -= Diff2;
-					break;
-				}
-			}
+			Diff1 = 2772 - sum - '0';
+			sum += Diff1;
+			putchar(Diff1 + '0');
+			break;
 		}
 	}
-	printf("%s\n", PassWord);
 	return (0);
 }
