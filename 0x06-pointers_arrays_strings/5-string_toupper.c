@@ -4,7 +4,7 @@
  * @str: lower case string
  * Return: Uppercase string
  */
-char *string_toupper(char *str);
+char *string_toupper(char *str)
 {
 	int i = 0;
 
