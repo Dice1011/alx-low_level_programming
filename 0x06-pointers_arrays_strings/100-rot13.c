@@ -2,24 +2,24 @@
 #include <stdio.h>
 /**
  * rot13 - encodes string to rot13
- * @str: pointer to string
- * Return: pointer str
+ * @s: pointer to string
+ * Return: pointer *s
  */
-char *rot13(char *str)
+char *rot13(char *s)
 {
 	int i, j;
 	char A[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqestuvwxyz";
 	char B = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyz";
 
-	for (i = 0; str[i] != '\0'; i++)
+	for (i = 0; s[i] != '\0'; i++)
 	{
 		for (j = 0; j < 10; j++)
 		{
-			if (str[i] == A[j])
+			if (s[i] == A[j])
 			{
-				str[i] = B[j];
+				s[i] = B[j];
 			}
 		}
 	}
-	return (str);
+	return (s);
 }
