@@ -15,7 +15,7 @@ char *rot13(char *str)
 	{
 		for (j = 0; j < 10; j++)
 		{
-			if (str[i] ==A[j])
+			if (str[i] == A[j])
 			{
 				str[i] = B[j];
 			}
