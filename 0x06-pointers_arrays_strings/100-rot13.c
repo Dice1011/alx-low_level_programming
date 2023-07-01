@@ -13,12 +13,13 @@ char *rot13(char *str)
 
 	for (i = 0; str[i] != '\0'; i++)
 	{
-		if (str[i] == A[j])
+		for (j = 0; j < 10; j++)
 		{
-			str[i] = B[j];
-			break;
+			if (str[i] ==A[j])
+			{
+				str[i] = B[j];
+			}
 		}
 	}
-}
-return (str);
+	return (str);
 }
