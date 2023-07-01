@@ -3,23 +3,26 @@
 /**
  * rot13 - encodes string to rot13
  * @s: pointer to string
- * Return: pointer *s
+ * Return: pointer *p
  */
 char *rot13(char *s)
 {
-	int i, j;
+	int j;
 	char A[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqestuvwxyz";
 	char B[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyz";
+	char *ptr = s;
 
-	for (i = 0; s[i] != '\0'; i++)
+	while (*s)
 	{
-		for (j = 0; j < 10; j++)
+		for (j = 0; j <= 52; j++)
 		{
-			if (s[i] == A[j])
+			if (*s == A[j])
 			{
-				s[i] = B[j];
+				*s = B[j];
+				break;
 			}
 		}
+		s++;
 	}
-	return (s);
+	return (ptr);
 }
