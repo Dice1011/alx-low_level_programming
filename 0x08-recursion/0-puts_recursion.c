@@ -4,7 +4,7 @@
  * @s: pointer to the string
  * Return: Nothing
  */
-int _puts_recursion(char *s)
+void _puts_recursion(char *s)
 {
 	if (*s == '\0')
 	{
