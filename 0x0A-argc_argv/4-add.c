@@ -24,7 +24,7 @@ int main(int argc, char *argv[])
 		{
 			p = argv[i];
 			k = strlen(p);
-			for (j = 0; j < argc; j++)
+			for (j = 0; j < k; j++)
 			{
 				if (isdigit(*(p + j)) == 0)
 				{
@@ -32,7 +32,7 @@ int main(int argc, char *argv[])
 					return (1);
 				}
 			}
-			sum += atoi(agrv[i]);
+			sum += atoi(argv[i]);
 		}
 	printf("%d\n", sum);
 	}
