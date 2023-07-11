@@ -1,1 +1,1 @@
-This folder contains all scripts that will be based in the C language with the Betty style of coding.
+Task 0: function creates an array of chars, and initializes it with a specific char
