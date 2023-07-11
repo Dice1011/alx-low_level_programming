@@ -39,7 +39,7 @@ char *str_concat(char *s1, char *s2)
 		{
 			ConStr[k] = s1[k];
 		}
-		if (k > i)
+		if (k >= i)
 		{
 			ConStr[k] = s2[j];
 			j++;
