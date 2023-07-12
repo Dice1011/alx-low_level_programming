@@ -35,12 +35,13 @@ int **alloc_grid(int width, int height)
 			free(Arry);
 			return (NULL);
 		}
-		for (k = 0; k < height; k++)
-		{
-			for (l = 0; l < width; l++)
-			{
-				Arry[k][l];
-			}
-		}
-		return (Arry);
 	}
+	for (k = 0; k < height; k++)
+	{
+		for (l = 0; l < width; l++)
+		{
+			Arry[k][l] = 0;
+		}
+	}
+	return (Arry);
+}
