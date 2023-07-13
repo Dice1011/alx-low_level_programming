@@ -1,12 +1,12 @@
 #include "main.h"
 #include <stdlib.h>
 /**
- * _calloc -
- * @nmemb:
- * @size:
- * Return:
+ * _calloc - allocates memory for an array and sets it to 0
+ * @nmemb: number of elements in the array
+ * @size: bytes
+ * Return: pointer to allocated memory
  */
-void *_calloc(unsigned int nmemb, unsigned in size)
+void *_calloc(unsigned int nmemb, unsigned int size)
 {
 	int i = 0, j = 0;
 	char *Arry;
