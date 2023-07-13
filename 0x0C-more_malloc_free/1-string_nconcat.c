@@ -37,14 +37,18 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	ConStr = malloc((sizeof(char) * l) + 1);
 	if (ConStr == NULL)
 		return (NULL);
+
 	j = 0;
 	while (k < l)
 	{
 		if (k <= i)
 			ConStr[k] = s1[k];
+
 		if (k >= i)
+		{
 			ConStr[k] = s2[j];
 			j++;
+		}
 		k++;
 	}
 	ConStr[k] = '\0';
