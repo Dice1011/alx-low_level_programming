@@ -9,11 +9,11 @@ int _strlen(const char *str)
 {
 	int len = 0;
 
-	whitle (*str++)
+	while (*str++)
 	{
 		len++;
 	}
-	return(len);
+	return (len);
 }
 /**
  * _strcpy - makes a copy of the string
@@ -53,7 +53,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 		return (NULL);
 	}
 	dog->name = malloc(sizeof(char) * (_strlen(name) + 1));
-	i ((*dog).name == NULL)
+	if ((*dog).name == NULL)
 	{
 		free(dog);
 		return (NULL);
