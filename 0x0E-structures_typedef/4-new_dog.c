@@ -23,14 +23,19 @@ int _strlen(const char *str)
  */
 char _strcpy(char *dest, char *src)
 {
-	int i;
+	int i, j = 0;
 
-	for (i  = 0; src[i]; i++)
+	while (src[j] != '\0')
+	{
+		j++;
+	}
+	for (i = 0; src[i] && i < j; i++)
 	{
 		dest[i] = src[i];
 	}
 	dest[i] = '\0';
-	return (dest);
+
+	return (*dest);
 }
 /**
  * new_dog - function creates new dog info
@@ -66,9 +71,9 @@ dog_t *new_dog(char *name, float age, char *owner)
 		return (NULL);
 	}
 
-	dog->name = _strcpy(dog->name, name);
+	_strcpy(dog->name, name);
 	dog->age = age;
-	dog->owner = _strcpy(dog->owner, owner);
+	_strcpy(dog->owner, owner);
 
 	return (dog);
 }
