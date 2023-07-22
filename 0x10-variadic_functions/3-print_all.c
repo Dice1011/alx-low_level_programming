@@ -29,7 +29,7 @@ void print_all(const char * const format, ...)
 					printf("%s%f", sep, va_arg(list, double));
 					break;
 				case 's':
-					s = va_arg(list, double);
+					s = va_arg(list, char*);
 					if (!s)
 					{
 						s = "(nil)";
