@@ -1,6 +1,6 @@
 #ifndef LISTS_H
 #define LISTS_H
-
+#include <stddef.h>
 /**
  * struct list_s - sinly linked list
  * @str: memory allocated string
