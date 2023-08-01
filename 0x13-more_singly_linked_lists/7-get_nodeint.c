@@ -15,5 +15,5 @@ listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
 		old_node = old_node->next;
 		i++;
 	}
-	return (old_node ? ld_node : NULL);
+	return (old_node ? old_node : NULL);
 }
