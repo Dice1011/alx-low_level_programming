@@ -6,7 +6,7 @@
  */
 int pop_listint(listint_t **head)
 {
-	listint_t = old_node;
+	listint_t *old_node;
 	int i;
 
 	if (!head || !*head)
